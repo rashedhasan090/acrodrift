@@ -1,0 +1,18 @@
+\documentclass{article}
+\begin{document}
+\begin{abstract}
+We study Large Language Models (LLMs) acting as agents that call tools through the
+Model Context Protocol (MCP). Our results show LLM agents leak context.
+\end{abstract}
+
+\input{sections/intro}
+
+\section{Method}
+We fine-tune with Low-Rank Adaptation (LoRA) and evaluate with Retrieval Augmented Generation (RGA).
+Each MCP server is sandboxed. % A comment mentioning XYZ is ignored.
+Later we use retrieval-augmented generation again, and the Model Context Protocol (MCP) once more.
+Our Trusted Execution Environment (TEE) is mentioned once and never again.
+Results are in Table~\ref{tab:RES} and $O(N)$ math is skipped, as is \cite{KDD2024}.
+We compare against a Graph Neural Network (GNN) and a GNN baseline, but later call it a
+Graph Network (GNN) by mistake.
+\end{document}
